@@ -136,7 +136,7 @@ with open("README.md", "r") as fh:
 #         raise ValueError("the package version could not be read")
 #     __version__ = __version__.group(1)
 
-__version__ = "0.0.0"
+__version__ = "0.0.0.0.1"
 setuptools.setup(
     name="transatlantic_beta",
     license="GNU Affero General Public License v3",
