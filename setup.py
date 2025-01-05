@@ -139,7 +139,7 @@ with open("README.md", "r") as fh:
 __version__ = "0.0.1"
 setuptools.setup(
     name="transatlantic_beta",
-    version=__version__
+    version=__version__,
     license="GNU Affero General Public License v3",
     long_description=long_description,
     long_description_content_type="text/markdown",
