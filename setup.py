@@ -127,8 +127,8 @@ ext_kwargs = dict(
 )
 
 
-# with open("README.md", "r") as fh:
-#     long_description = fh.read()
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 # with open("genieclust/__init__.py", "r") as fh:
 #     __version__ = re.search("(?m)^\\s*__version__\\s*=\\s*[\"']([0-9.]+)[\"']", fh.read())
@@ -140,6 +140,8 @@ __version__ = "0.0.0"
 setuptools.setup(
     name="placeholder",
     license="GNU Affero General Public License v3",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     install_requires=[
         "numpy",
         "scipy",
