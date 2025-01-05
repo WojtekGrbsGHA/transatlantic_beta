@@ -3,7 +3,7 @@ name: wheels
 on: workflow_dispatch
 
 env:
-    CIBW_SKIP: cp2* pp* cp35* cp36* cp37* cp38* cp39* *-win32 *-musllinux* *-macosx_*_universal2* *win_arm64* *-manylinux_arm64 *-manylinux_i686 *-manylinux_ppc64le *-manylinux_s390x *-manylinux_aarch64 *v7*
+    CIBW_SKIP: cp2* pp* cp35* cp36* cp37* cp38* cp39* *-win32 *-musllinux* *-macosx_*_universal2* *win_arm64* *-manylinux_arm64 *-manylinux_i686 *-manylinux_ppc64le *-manylinux_s390x *-manylinux_aarch64 *v7* *arm*
     CIBW_ARCHS: all
 
 jobs:
