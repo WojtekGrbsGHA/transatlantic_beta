@@ -14,13 +14,13 @@ import os
 import sys
 import re
 
-PATH_ALG1 = "./package/algorithms/src/algorithm1/source/"
-PATH_ALG2 = "./package/algorithms/src/algorithm2/source/"
-PATH_ALG3 = "./package/algorithms/src/algorithm3/source/"
+PATH_ALG1 = "./transatlantic_beta/algorithms/src/algorithm1/source/"
+PATH_ALG2 = "./transatlantic_beta/algorithms/src/algorithm2/source/"
+PATH_ALG3 = "./transatlantic_beta/algorithms/src/algorithm3/source/"
 
-DEST_PATH_ALG1 = "package.algorithms.src.algorithm1.binaries."
-DEST_PATH_ALG2 = "package.algorithms.src.algorithm2.binaries."
-DEST_PATH_ALG3 = "package.algorithms.src.algorithm3.binaries."
+DEST_PATH_ALG1 = "transatlantic_beta.algorithms.src.algorithm1.binaries."
+DEST_PATH_ALG2 = "transatlantic_beta.algorithms.src.algorithm2.binaries."
+DEST_PATH_ALG3 = "transatlantic_beta.algorithms.src.algorithm3.binaries."
 
 ALG1_MODULES = (
     "mstl",
@@ -178,8 +178,8 @@ setuptools.setup(
         "sdist": genieclust_sdist,
         "build_ext": genieclust_build_ext
     },
-    packages=setuptools.find_packages(where="./package/"),  # Automatically find packages in the current directory
-    package_dir={"": "package"},  # Map the root directory of packages to "package/"
+    packages=setuptools.find_packages(where="./transatlantic_beta/"),  # Automatically find packages in the current directory
+    package_dir={"": "transatlantic_beta"},  # Map the root directory of packages to "package/"
     ext_modules=extensions_list,
     include_dirs=[np.get_include()]
 )
