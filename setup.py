@@ -179,8 +179,8 @@ setuptools.setup(
         "sdist": genieclust_sdist,
         "build_ext": genieclust_build_ext
     },
-    packages=setuptools.find_packages(where="./transatlantic_beta/"),  # Automatically find packages in the current directory
-    package_dir={"": "transatlantic_beta"},  # Map the root directory of packages to "package/"
+    packages=setuptools.find_packages(include=["transatlantic_beta*", ]),  # Automatically find packages in the current directory
+    # package_dir={"": "transatlantic_beta"},  # Map the root directory of packages to "package/"
     ext_modules=extensions_list,
     include_dirs=[np.get_include()]
 )
